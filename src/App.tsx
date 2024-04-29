@@ -12,12 +12,16 @@ function App() {
         lg: `"header header"
         "aside main"`,
       }}
+      templateColumns={{
+        base: "1fr",
+        lg: "200px 1fr",
+      }}
     >
       <GridItem area={"header"}>
         <Header />
       </GridItem>
       <Show above="lg">
-        <GridItem area={"aside"}>
+        <GridItem area={"aside"} paddingX={5}>
           <GenreList />
         </GridItem>
       </Show>
