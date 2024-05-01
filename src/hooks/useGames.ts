@@ -5,7 +5,6 @@ export interface Platform {
   id: number;
   name: string;
   slug: string;
-  search: string;
 }
 
 export interface Game {
